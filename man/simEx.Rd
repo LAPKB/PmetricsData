@@ -5,7 +5,7 @@
 \alias{simEx}
 \title{Example simulator output}
 \format{
-R6 \link{PM_sim}
+R6 \link[Pmetrics:PM_sim]{Pmetrics::PM_sim}
 }
 \usage{
 simEx
@@ -14,8 +14,8 @@ simEx
 Example simulator output
 }
 \details{
-This is an R6 Pmetrics \link{PM_sim} object created by
-created by running \verb{$sim()} on a \link{PM_result} object, e.g.
+This is an R6 Pmetrics \link[Pmetrics:PM_sim]{Pmetrics::PM_sim} object created by
+created by running \verb{$sim()} on a \link[Pmetrics:PM_result]{Pmetrics::PM_result} object, e.g.
 \verb{NPex$sim(include = 1:4, limits = NA, nsim = 100).}
 }
 \author{

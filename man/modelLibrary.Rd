@@ -13,7 +13,7 @@ depo compartment(s).
 clearances.
 \item \strong{route} Input route(s)
 \item \strong{elim} List of compartment numbers with elimination
-\item \strong{mod} the \link{PM_model}
+\item \strong{mod} the \link[Pmetrics:PM_model]{Pmetrics::PM_model}
 \item \strong{name} Model name in plain English
 \item \strong{algebraic} Token indicating algebraic solution. Format is a character
 vector of 4 elements:

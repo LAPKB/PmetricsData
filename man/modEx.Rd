@@ -5,7 +5,7 @@
 \alias{modEx}
 \title{Pmetrics model object}
 \format{
-R6 \link{PM_model}
+R6 \link[Pmetrics:PM_model]{Pmetrics::PM_model}
 }
 \usage{
 modEx

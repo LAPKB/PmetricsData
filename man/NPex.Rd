@@ -5,7 +5,7 @@
 \alias{NPex}
 \title{Example NPAG Output}
 \format{
-R6 \link{PM_result}
+R6 \link[Pmetrics:PM_result]{Pmetrics::PM_result}
 }
 \usage{
 NPex
@@ -14,7 +14,7 @@ NPex
 Example output from an NPAG run.
 }
 \details{
-This is an R6 Pmetrics \link{PM_result} object created with \link{PM_load} after an NPAG run.
+This is an R6 Pmetrics \link[Pmetrics:PM_result]{Pmetrics::PM_result} object created with \code{\link[Pmetrics:PM_load]{Pmetrics::PM_load()}} after an NPAG run.
 The run consisted of a model with an absorptive compartment and a central compartment.
 There were 4 parameters in the model: lag time of absorption (Tlag1),
 rate constant of absorption (Ka), volume (V) and rate constant of elmination (Ke).

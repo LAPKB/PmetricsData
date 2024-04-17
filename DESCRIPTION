@@ -4,10 +4,10 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Michael", "Neely", , "mneely@usc.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1675-8276"))
-Description: Data and examples for Pmetrics
+Description: This package contains the data and examples for the Pmetrics package.
 Depends: 
     R (>= 3.5.0)
-License: GPL (>= 2)
+License: GPL (>= 3)
 URL: http://lapk.org
 Encoding: UTF-8
 Language: es

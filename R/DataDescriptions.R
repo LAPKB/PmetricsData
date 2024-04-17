@@ -2,7 +2,7 @@
 #'
 #' Coefficients to calculate sex-specific percentiles of length, weight and head cicumference data
 #' in children from 0 to 18 years.  Downloaded and combined from http://www.cdc.gov/growthcharts/data_tables.htm.
-#' Used with the \code{qgrowth} function to generate height and weight percentiles for the purposes of simulation.
+#' Used with the [Pmetrics::qgrowth()] function to generate height and weight percentiles for the purposes of simulation.
 #'
 #' @name growth
 #' @docType data
@@ -12,6 +12,7 @@
 #' percentiles), SEX, AGE, PERCENTILE, and CHART (length x age, wt x age, wt x length, hc x age, or ht x age).
 #' @author Michael Neely
 #' @keywords datasets
+
 
 "growth"
 
@@ -32,6 +33,7 @@
 #' P85, P90, P95, P97: age and sex specific BMI percentiles
 #' @author Michael Neely
 #' @keywords datasets
+
 
 "cdc_bmi"
 
@@ -56,6 +58,7 @@
 #' @author Michael Neely
 #' @keywords datasets
 
+
 "ger_bmi"
 
 #' Example MIC data
@@ -66,7 +69,7 @@
 #' a histogram (top) and table (bottom) of MIC distributions.
 #'
 #' Copy the table into excel, save as a .csv file, and read into R using
-#' \code{\link{read.csv}}.  Then use \code{\link{makePTAtarget}}.
+#' [read.csv()].  Then use [Pmetrics::makePTAtarget()].
 #'
 #' @name mic1
 #' @docType data
@@ -80,11 +83,12 @@
 #' @author Michael Neely
 #' @keywords datasets
 
+
 "mic1"
 
 #' Example output from an NPAG run.
 #'
-#' This is an R6 Pmetrics [PM_result] object created with [PM_load] after an NPAG run.
+#' This is an R6 Pmetrics [Pmetrics::PM_result] object created with [Pmetrics::PM_load()] after an NPAG run.
 #' The run consisted of a model with an absorptive compartment and a central compartment.
 #' There were 4 parameters in the model: lag time of absorption (Tlag1),
 #' rate constant of absorption (Ka), volume (V) and rate constant of elmination (Ke).
@@ -95,38 +99,40 @@
 #' @docType data
 #' @title Example NPAG Output
 #' @usage NPex
-#' @format R6 [PM_result]
+#' @format R6 [Pmetrics::PM_result]
 #' @author Michael Neely
 #' @keywords datasets
+
 #'
 
 "NPex"
 
 #' Example output from an NPAG run with validation.
 #'
-#' This is an R6 Pmetrics [PM_result] object created with [PM_load] after an NPAG run.
+#' This is an R6 Pmetrics [Pmetrics::PM_result] object created with [Pmetrics::PM_load()] after an NPAG run.
 #' The run consisted of a model with an absorptive compartment and a central compartment.
 #' There were 4 parameters in the model: lag time of absorption (Tlag1),
 #' rate constant of absorption (Ka), volume (V) with weight as a covariate, and
 #' rate constant of elmination (Ke).
 #' There were 20 subjects in the dataset.  The run was
 #' 100 cycles long and did not converge. It was then validated with the `$validate`
-#' method for [PM_result] objects.
+#' method for [Pmetrics::PM_result] objects.
 #'
 #' @name NPex_val
 #' @docType data
 #' @title Example NPAG Output with validation
 #' @usage NPex_val
-#' @format R6 [PM_result]
+#' @format R6 [Pmetrics::PM_result]
 #' @author Michael Neely
 #' @keywords datasets
+
 #'
 
 "NPex_val"
 
 #' Example output from an IT2B run.
 #'
-#' This is an R6 Pmetrics [PM_result] object created with [PM_load] after an NPAG run.
+#' This is an R6 Pmetrics [Pmetrics::PM_result()] object created with [Pmetrics::PM_load()] after an NPAG run.
 #' The run consisted of a model with an absorptive compartment and a central compartment.
 #' There were 4 parameters in the model: lag time of absorption (Tlag1),
 #' rate constant of absorption (Ka), volume (V) and rate constant of elmination (Ke).
@@ -137,9 +143,10 @@
 #' @docType data
 #' @title Example IT2B Output
 #' @usage ITex
-#' @format R6 [PM_result]
+#' @format R6 [Pmetrics::PM_result]
 #' @author Michael Neely
 #' @keywords datasets
+
 #'
 
 "ITex"
@@ -155,9 +162,10 @@
 #' @docType data
 #' @title Pmetrics data file
 #' @usage dataEx
-#' @format [PM_data]
+#' @format [Pmetrics::PM_data]
 #' @author Michael Neely
 #' @keywords datasets
+
 
 "dataEx"
 
@@ -172,9 +180,10 @@
 #' @docType data
 #' @title Pmetrics data file with errors
 #' @usage badData
-#' @format [PM_data]
+#' @format [Pmetrics::PM_data]
 #' @author Michael Neely
 #' @keywords datasets
+
 
 "badData"
 
@@ -192,25 +201,27 @@
 #' @docType data
 #' @title Pmetrics model object
 #' @usage modEx
-#' @format R6 [PM_model]
+#' @format R6 [Pmetrics::PM_model]
 #' @author Michael Neely
 #' @keywords datasets
+
 
 "modEx"
 
 #' Example simulator output
 #'
-#' This is an R6 Pmetrics [PM_sim] object created by
-#' created by running `$sim()` on a [PM_result] object, e.g.
+#' This is an R6 Pmetrics [Pmetrics::PM_sim] object created by
+#' created by running `$sim()` on a [Pmetrics::PM_result] object, e.g.
 #' `NPex$sim(include = 1:4, limits = NA, nsim = 100).`
 #'
 #' @name simEx
 #' @docType data
 #' @title Example simulator output
 #' @usage simEx
-#' @format R6 [PM_sim]
+#' @format R6 [Pmetrics::PM_sim]
 #' @author Michael Neely
 #' @keywords datasets
+
 #'
 
 "simEx"
@@ -231,7 +242,7 @@
 #' clearances.
 #' * **route** Input route(s)
 #' * **elim** List of compartment numbers with elimination
-#' * **mod** the [PM_model]
+#' * **mod** the [Pmetrics::PM_model]
 #' * **name** Model name in plain English
 #' * **algebraic** Token indicating algebraic solution. Format is a character
 #' vector of 4 elements:
@@ -244,6 +255,7 @@
 #' "P\[Ke,V\], B\[0\], R\[1\], O\[1\]"
 #' @author Michael Neely
 #' @keywords datasets
+
 #'
 
 "modelLibrary"
@@ -256,6 +268,7 @@
 #' @author Michael Neely
 #' @keywords datasets
 
+
 "locales"
 
 
@@ -266,5 +279,6 @@
 #' @format Sample model text
 #' @author Michael Neely
 #' @keywords datasets
+
 
 "model"

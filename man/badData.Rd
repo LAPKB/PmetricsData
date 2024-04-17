@@ -5,7 +5,7 @@
 \alias{badData}
 \title{Pmetrics data file with errors}
 \format{
-\link{PM_data}
+\link[Pmetrics:PM_data]{Pmetrics::PM_data}
 }
 \usage{
 badData

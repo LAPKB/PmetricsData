@@ -24,7 +24,7 @@ or drug, and then select the desired row of the resulting table to see
 a histogram (top) and table (bottom) of MIC distributions.
 
 Copy the table into excel, save as a .csv file, and read into R using
-\code{\link{read.csv}}.  Then use \code{\link{makePTAtarget}}.
+\code{\link[=read.csv]{read.csv()}}.  Then use \code{\link[Pmetrics:makePTAtarget]{Pmetrics::makePTAtarget()}}.
 }
 \author{
 Michael Neely

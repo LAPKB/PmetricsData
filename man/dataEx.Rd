@@ -5,7 +5,7 @@
 \alias{dataEx}
 \title{Pmetrics data file}
 \format{
-\link{PM_data}
+\link[Pmetrics:PM_data]{Pmetrics::PM_data}
 }
 \usage{
 dataEx

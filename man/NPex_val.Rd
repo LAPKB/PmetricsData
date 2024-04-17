@@ -5,7 +5,7 @@
 \alias{NPex_val}
 \title{Example NPAG Output with validation}
 \format{
-R6 \link{PM_result}
+R6 \link[Pmetrics:PM_result]{Pmetrics::PM_result}
 }
 \usage{
 NPex_val
@@ -14,14 +14,14 @@ NPex_val
 Example output from an NPAG run with validation.
 }
 \details{
-This is an R6 Pmetrics \link{PM_result} object created with \link{PM_load} after an NPAG run.
+This is an R6 Pmetrics \link[Pmetrics:PM_result]{Pmetrics::PM_result} object created with \code{\link[Pmetrics:PM_load]{Pmetrics::PM_load()}} after an NPAG run.
 The run consisted of a model with an absorptive compartment and a central compartment.
 There were 4 parameters in the model: lag time of absorption (Tlag1),
 rate constant of absorption (Ka), volume (V) with weight as a covariate, and
 rate constant of elmination (Ke).
 There were 20 subjects in the dataset.  The run was
 100 cycles long and did not converge. It was then validated with the \verb{$validate}
-method for \link{PM_result} objects.
+method for \link[Pmetrics:PM_result]{Pmetrics::PM_result} objects.
 }
 \author{
 Michael Neely
