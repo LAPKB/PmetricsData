@@ -8,7 +8,7 @@ Description: Supply the data necessary to run examples and some functions in the
 Depends: 
     R (>= 3.5.0)
 License: GPL (>= 3)
-URL: http://lapk.org
+URL: http://lapk.org, https://github.com/LAPKB/PmetricsData
 Encoding: UTF-8
 Language: es
 LazyLoad: yes
@@ -16,3 +16,4 @@ LazyData: yes
 LazyDataCompression: bzip2
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
+BugReports: https://github.com/LAPKB/PmetricsData/issues
