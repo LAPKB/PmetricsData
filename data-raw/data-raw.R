@@ -1,7 +1,7 @@
 library(readr)
 library(Pmetrics)
 
-setwd("~/LAPK/Development/Pmetrics/data-raw")
+setwd("~/LAPK/Development/PmetricsData/data-raw")
 
 
 # BMI data -------------------------------------------------------------
@@ -59,12 +59,16 @@ usethis::use_data(badData, overwrite = T)
 
 setwd("Runs")
 # NPAG
+fitEx$run(run = 1, overwrite = TRUE, intern = TRUE)
+
 NPex <- PM_load(1)
 usethis::use_data(NPex, overwrite = T)
 
 # IT2B
+fitEx$run(run = 2, engine = "IT2B", overwrite = TRUE, intern = TRUE)
+
 ITex <- PM_load(2)
-usethis::use_data(ITex, overwrite = T)
+usethis::use_data(ITex, overwrite = TRUE)
 
 setwd("..")
 
@@ -73,14 +77,14 @@ simEx <- NPex$sim(
   limits = c(0, 3), data = "ptaex1.csv",
   predInt = c(120, 144, 0.5), seed = rep(-17, 4)
 )
-usethis::use_data(simEx, overwrite = T)
+usethis::use_data(simEx, overwrite = TRUE)
 
 # NPex with valid field
 setwd("Valid")
-NPex_val <- NPex
-NPex_val$validate()
+NPex_val <- NPex$clone()
+NPex_val$validate(limits = c(0,3))
 
 usethis::use_data(NPex_val, overwrite = T)
 
 
-usethis::use_data(data-raw, overwrite = TRUE)
+

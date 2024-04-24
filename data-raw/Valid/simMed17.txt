@@ -12,7 +12,7 @@
  Ka               0.100000000      TO      0.900000000    
  Ke               0.100000000E-02  TO      0.100000000    
  V                 30.0000000      TO       120.000000    
- lag               0.00000000      TO       4.00000000    
+ Tlag1             0.00000000      TO       4.00000000    
 
  THE NAME OF THE .CSV FILE WHICH CONTAINS THE DOSE/
  COVARIATE INFORMATION (IN ITS FIRST SUBJECT BLOCK) WHICH WILL 
@@ -444,7 +444,7 @@ ZMQtemp.csv
  THE FOLLOWING       1 LINES HAVE THE SIMULATED 
  PARAMETER VALUES FOR ALL THE SUBJECTS.
 
- SUBJ.     Ka             Ke             V              lag        
+ SUBJ.     Ka             Ke             V              Tlag1      
      1  0.8958512      0.3488909E-01   71.83326       1.999256    
 
 
