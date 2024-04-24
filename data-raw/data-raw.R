@@ -62,6 +62,7 @@ setwd("Runs")
 fitEx$run(run = 1, overwrite = TRUE, intern = TRUE)
 
 NPex <- PM_load(1)
+NPex$validate(limits = NA)
 usethis::use_data(NPex, overwrite = T)
 
 # IT2B
@@ -79,12 +80,7 @@ simEx <- NPex$sim(
 )
 usethis::use_data(simEx, overwrite = TRUE)
 
-# NPex with valid field
-setwd("Valid")
-NPex_val <- NPex$clone()
-NPex_val$validate(limits = c(0,3))
 
-usethis::use_data(NPex_val, overwrite = T)
 
 
 

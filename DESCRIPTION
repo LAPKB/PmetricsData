@@ -1,10 +1,10 @@
 Package: PmetricsData
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Data for the Pmetrics Package
+Version: 1.0
 Authors@R: 
-    person("Michael", "Neely", , "mneely@usc.edu", role = c("aut", "cre"),
+    person("Michael", "Neely", , "mneely@usc.edu", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-1675-8276"))
-Description: This package contains the data and examples for the Pmetrics package.
+Description: Supply the data necessary to run examples and some functions in the Pmetrics package. Included are sample data and model, outputs of model fitting and simulation, CDC growth tables, and an example of minimum inhbitory concentration data for an antibiotic/bacterium pair. Data sets can be used in other packages and applications.
 Depends: 
     R (>= 3.5.0)
 License: GPL (>= 3)

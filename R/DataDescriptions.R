@@ -1,7 +1,7 @@
 #' Centers for Disease Control Pediatric and Adolescent Growth Data Table
 #'
 #' Coefficients to calculate sex-specific percentiles of length, weight and head cicumference data
-#' in children from 0 to 18 years.  Downloaded and combined from http://www.cdc.gov/growthcharts/data_tables.htm.
+#' in children from 0 to 18 years.  Downloaded and combined from [](https://www.cdc.gov/growthcharts/data_tables.htm).
 #' Used with the [Pmetrics::qgrowth()] function to generate height and weight percentiles for the purposes of simulation.
 #'
 #' @name growth
@@ -64,12 +64,12 @@
 #' Example MIC data
 #'
 #' This data frame contains MIC data for vancomycin against S. aureus.  It was obtained
-#' from the EUCAST website at \url{http://mic.eucast.org}.  Select the organism
+#' from the EUCAST website at [](https://mic.eucast.org).  Select the organism
 #' or drug, and then select the desired row of the resulting table to see
 #' a histogram (top) and table (bottom) of MIC distributions.
 #'
-#' Copy the table into excel, save as a .csv file, and read into R using
-#' [read.csv()].  Then use [Pmetrics::makePTAtarget()].
+#' Copy the table into excel, save as a .csv file, and read into R using a function like
+#' [read.csv()] or [readr::read_csv()].  Then use [Pmetrics::makePTAtarget()].
 #'
 #' @name mic1
 #' @docType data
@@ -86,27 +86,6 @@
 
 "mic1"
 
-#' Example output from an NPAG run.
-#'
-#' This is an R6 Pmetrics [Pmetrics::PM_result] object created with [Pmetrics::PM_load()] after an NPAG run.
-#' The run consisted of a model with an absorptive compartment and a central compartment.
-#' There were 4 parameters in the model: lag time of absorption (Tlag1),
-#' rate constant of absorption (Ka), volume (V) and rate constant of elmination (Ke).
-#' There were 20 subjects in the dataset.  The run was
-#' 100 cycles long and did not converge.
-#'
-#' @name NPex
-#' @docType data
-#' @title Example NPAG Output
-#' @usage NPex
-#' @format R6 [Pmetrics::PM_result]
-#' @author Michael Neely
-#' @keywords datasets
-
-#'
-
-"NPex"
-
 #' Example output from an NPAG run with validation.
 #'
 #' This is an R6 Pmetrics [Pmetrics::PM_result] object created with [Pmetrics::PM_load()] after an NPAG run.
@@ -118,21 +97,21 @@
 #' 100 cycles long and did not converge. It was then validated with the `$validate`
 #' method for [Pmetrics::PM_result] objects.
 #'
-#' @name NPex_val
+#' @name NPex
 #' @docType data
 #' @title Example NPAG Output with validation
-#' @usage NPex_val
+#' @usage NPex
 #' @format R6 [Pmetrics::PM_result]
 #' @author Michael Neely
 #' @keywords datasets
 
 #'
 
-"NPex_val"
+"NPex"
 
 #' Example output from an IT2B run.
 #'
-#' This is an R6 Pmetrics [Pmetrics::PM_result()] object created with [Pmetrics::PM_load()] after an NPAG run.
+#' This is an R6 Pmetrics [Pmetrics::PM_result()] object created with [Pmetrics::PM_load()] after an IT2B run.
 #' The run consisted of a model with an absorptive compartment and a central compartment.
 #' There were 4 parameters in the model: lag time of absorption (Tlag1),
 #' rate constant of absorption (Ka), volume (V) and rate constant of elmination (Ke).
